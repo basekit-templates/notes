@@ -1,0 +1,304 @@
+// ---------------------------------
+// Journal: CSS > Template Theme
+// ---------------------------------
+
+// 1. #HEADER & FOOTER
+// 2. #TYPOGRAPHY
+// 3. #FORMS
+// 4. #BUTTONS
+// 5. #IMAGES
+
+
+// -----------------------------
+// 1. #Header & Footer
+// -----------------------------
+
+.template-header,
+.template-footer {
+	.flex-vert-center; // Mixin > Flexbox: Vertical Align Center Mixin
+	min-height: 80px;
+	background-color: @color-swatch1;
+	// Tablet: reduce height
+}
+
+
+// Footer
+// ------
+
+.template-footer {
+	min-height: 100px;
+	background-color: @color-swatch3;
+	text-align: center;
+	color: @font-swatch9-color;
+	// Change heading elements to white
+	h1, h2, h3, h4 {
+		color: @font-swatch9-color;
+	}
+	// Lighten paragraph & link elements
+	p, a {
+		color: @font-swatch9-color;
+		padding: 0;
+	}
+	// Reset Twitter feed styles
+	.twitter-feed {
+		padding: 0;
+		background-color: transparent;
+	}
+}
+
+
+
+
+// -----------------------------
+// 2. #Typography
+// -----------------------------
+
+// Colour Swatches
+// ---------------
+
+// @color-swatch1: Background
+// @color-swatch2: Contrast
+// @color-swatch3: Buttons
+// @color-swatch4: Headings
+// @color-swatch5: Paragraph
+// @color-swatch6: Navigation Links
+// @color-swatch7: Spare
+
+
+// Font Swatches
+// -------------
+
+// font1:  Heading 1
+// font2:  Heading 2
+// font3:  Heading 3
+// font4:  Heading 4
+// font5:  Paragraph
+// font6:  Navigation Link
+// font7:  Buttons
+// font8:  Feature Headline
+// font9:  Feature Strapline
+// font10: Company Name (Logo)
+
+
+
+// -----------------------------
+// 3. #Forms
+// -----------------------------
+
+// Form
+// ----------
+
+form, .form {
+    background-color: transparent;
+    @media @mobile {
+        text-align: center;
+    }
+}
+
+// Form Body
+.form-body {
+    margin: 0;
+}
+
+// Form Group
+.form-group {
+	margin-bottom: 20px;
+	@media @mobile {
+		margin-bottom: 10px;
+	}
+}
+
+.signupform__input,
+.signupform__input,
+.blogsearch__input,
+.ecomproductslist__input  {
+    border: 1px solid @color-swatch7!important;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+// Legend
+// ----------
+
+legend {
+	background-color: transparent;
+	color: @font-swatch4-color;
+    padding-bottom: 20px;
+}
+
+.signupform__label {
+    &:before {
+        width: 130px;
+    }
+}
+
+.contactform__legend {
+    margin-bottom: 0;
+    @media @mobile {
+        text-align: center;
+        margin: 5px auto;
+    }
+    &:before {
+        width: 110px;
+    }
+}
+
+.contactform input[type="email"] {
+    padding: 6px 0;
+}
+
+.contactform__input {
+    @media @mobile {
+        text-align: center;
+    }
+}
+
+.widget__profile {
+    .signupform__label {
+        &:before {
+            width: 110px;
+        }
+    }
+}
+
+// Select
+// ----------
+
+select {
+    height: 36px;
+    outline: none;
+    border: 1px solid darken(@color-swatch1,10%);
+    border-radius: 0;
+    background-color: @color-swatch1;
+    font-size: 12px;
+    text-indent: 0;
+    &:hover, &:focus {
+        background-color: @color-swatch1;
+        cursor: pointer;
+	}
+}
+
+.signupform__label {
+    display: none;
+}
+
+// Inputs: Text
+// ------------
+
+input[type="search"],
+input[type="email"],
+input[type="password"],
+textarea,
+.input--single-line {
+    border: 0;
+    border-bottom: 1px solid @color-swatch7;
+    -webkit-appearance: none;
+    &:focus {
+        border: 0;
+        box-shadow: none;
+        outline: none;
+        border-bottom: 1px solid @color-swatch4;
+    }
+}
+
+.signupform__form-group input.input[type=email] {
+    border: 1px solid @color-swatch7!important;
+}
+
+.signupform__label, 
+.contactform__legend, 
+.blogsearch__legend {
+    background-color: transparent;
+    border-bottom: 0;
+    font-size: @font__h3--font-size;
+    font-weight: @font__h3--font-weight;
+}
+
+.blogsearch__legend {
+    margin-bottom: 0;
+    @media @mobile {
+        padding-bottom: 20px;
+        text-align: center;
+        margin: 5px auto;
+        &:before {
+            margin-top: 35px;
+        }
+    }
+}
+
+.legend {
+    color: @color__form-legend--text;
+}
+
+.label {
+    color: @color__form-label--text;
+}
+
+.signupform__fieldset {
+    @media @mobile {
+        text-align: left;
+    }
+}
+
+.signupform__input {
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    .button--submit {
+        display: inline-block;
+        float: right;
+        min-width: 20%;
+        vertical-align: bottom;
+        margin-top: 21px;
+    }
+}
+
+.signupform__form-group {
+    .clearfix
+}
+
+
+
+
+// -----------------------------
+// 4. #Buttons
+// -----------------------------
+
+button, 
+.button, 
+.blogpostlist__read-more {
+    padding: 8px 30px;
+    background-color: @color__button--background;
+    border: 1px solid @color__button--border;
+    color: @color__button--text;
+    border-radius: 20px;
+
+    &:hover {
+        background-color: @color__button--background--hover;
+        color: @color__button--text--hover;
+    }
+}
+
+
+
+
+// -----------------------------
+// 5. #Images
+// -----------------------------
+
+// Image Captions
+// --------------
+
+// Gallery & Slideshow
+.image-title,
+.image-description {
+	color: @color-swatch1;
+}
+
+// Image Widget
+.image-widget__caption { margin: 10px 0; }
+.image-widget__image-title,
+.image-widget__image-description {
+	color: @font-swatch5-color;
+	text-shadow: none;
+}

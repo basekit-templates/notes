@@ -1,0 +1,15 @@
+<!-- Header -->
+<header>
+    <div class="homepage-feature">
+        {{widget('feature', 'featurehome', {
+            "header": "profile", 
+            "defaultBgImg": asset('images/feature-bg.jpg'),
+            'positionTopPercentage': '0',
+            'showBtn': true,
+            buttonText: "Lorem Ipsum"
+        })|raw}}
+        {% include "includes/footer.twig" %}
+    </div>
+</header>
+
+<!-- End Header -->

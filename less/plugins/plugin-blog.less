@@ -1,0 +1,426 @@
+ // -------------------------------------
+// Journal: CSS > Plugin: Blog
+// -------------------------------------
+
+// -----------------------------
+// #Table of Contents
+// -----------------------------
+
+// 1. #BLOG SEARCH
+// 2. #BLOG POST LIST
+// 3. #BLOG POST
+
+
+
+
+// -------------------------------
+// 1. #Blog Search
+// -------------------------------
+
+.blogsearch__fieldset {
+    margin: 0px auto 10px;
+    display: table;
+    width: 100%;
+}
+
+.blogsearch__legend {
+    padding-top: 5px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    @media @tablet {
+        padding-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.blogsearch__label {
+    display: none;
+}
+
+.blogsearch__form-group:nth-child(1) {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 40px;
+    @media @tablet {
+        width: 100%;
+        float: initial;
+        display: table;
+    }
+}
+
+.blogsearch__form-group:nth-child(2) {
+    display: inline-block;
+    float: left;
+    width: 23%;
+    text-align: left;
+    margin-left: 5px;
+    @media @tablet {
+        width: 100%;
+        float: initial;
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+// -------------------------------
+// 2. #Blog Post
+// -------------------------------
+
+// Blog Post List in 2 columns
+.responsivecolumns .columns-two-left, 
+.responsivecolumns .columns-two-right {
+    .blogpostlist__post-footer .timestamp {
+        width: 100%;
+        @media @tablet {
+            text-align: center;
+        }
+    }
+}
+
+// Blog Post List in 3 columns
+.responsivecolumns .columns-three-left, 
+.responsivecolumns .columns-three-middle, 
+.responsivecolumns .columns-three-right {
+    .blogpostlist__post-footer .timestamp {
+        width: 100%;
+    }
+    .blogpostlist__read-more {
+        padding: 8px 20px;
+    }
+}
+
+// Blog Post List in 4 columns
+.responsivecolumns .columns-four-first, 
+.responsivecolumns .columns-four-second, 
+.responsivecolumns .columns-four-third, 
+.responsivecolumns .columns-four-fourth {
+    .blogpostlist__post-footer .timestamp {
+        width: 100%;
+    }
+    .blogpostlist__read-more {
+        padding: 8px;
+    }
+}
+
+.blogpostlist__post-article {
+    display: inline-block;
+    margin-right: 5%;
+    width: 47.5%;
+    vertical-align: top;
+    margin-bottom: 0;
+    @media screen and (min-width: 285px) and (max-width: 568px)  {
+        margin-right: 0;
+        width: 100%;
+    }
+    @media @tablet {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.bk-blogpostlist .post-article:nth-child(2n) {
+    margin-right: 0;
+}
+
+.blogpost__post-title {
+    color: @color__blogpost-title--text;
+}
+
+.blogpostlist__post-title {
+    color: @color__blogpostlist-title--text;
+}
+
+.blogpost__post-content {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.blogsearch__input {
+    margin: 0px auto;
+    display: table;
+    height: 40px;
+}
+
+.blogpostlist .post-article {
+    position: relative;
+    float: left;
+    width: 47%;
+    padding: 20px;
+    @media @tablet {
+        padding: 40px 30px 30px 20px;
+        width: 100%;
+    }
+    @media @mobile {
+        padding: 20px 20px 10px 20px;
+    } 
+}
+
+.blogpostlist__post-article {
+    @media @mobile {
+        text-align: center;
+    }
+    hr {
+        border: 1px solid darken(@color-swatch7,10%);
+    }
+}
+
+.blogpostlist__read-more {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 30px;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+// Blog Post Flexbox
+.blogpostlist__post-image {
+    @media @tablet {
+        width: 100%;
+        float: initial;
+        display: block;
+        margin-right: 0;
+        min-height: 0;
+    }
+}
+
+.blogpostlist__post-content {
+    margin: 20px 0 0;
+    @media @tablet {
+        width: 100%;
+        float: inital;
+        display: block;
+    }
+}
+
+// Blog Post List Footer
+.blogpostlist__post-footer {
+    @media @tablet {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .timestamp {
+        padding: 20px 0;
+        margin: 0 auto;
+        text-align: left;
+        border-bottom: 4px solid @color-swatch7;
+        display: inline-block;
+        @media @mobile {
+            display: table;
+            text-align: center;
+        }
+    }
+}
+
+.post-image + .post-content + .blogpostlist__post-footer {
+    text-align: left;
+    @media @tablet {
+        width: initial;
+        padding-left: 0;
+    }
+}
+
+.post-image .image {
+    max-height: 100%;
+}
+
+
+// Blog Post List Pagination
+.blogpostlist__pagination-item {
+    display: inline-block;
+    width: 49%;
+}
+
+.blogpostlist__pagination-item:nth-child(2) {
+    text-align: right;
+    float: right;
+}
+
+// List and Single Post
+.blogpostlist__post-header,
+.blogpostlist__post-excerpt {
+    max-width: 700px;
+}
+
+.post-body.blogpost__post-body {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.blogpostlist__post-excerpt {
+    padding-bottom: 10px;
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.blogpost__post-image,
+.blogpost__post-content,
+.blogpost__post-footer,
+.blogpostlist__post-image,
+.blogpostlist__post-content
+ {
+    position: relative;
+    vertical-align: top;
+}
+
+
+
+
+// -------------------------------
+// 3. #Blog Post
+// -------------------------------
+
+.blogpost__post-header {
+    display: inline-block;
+    border-bottom: 4px solid @color-swatch7;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.blogpost__image {
+    margin: 0 auto;
+    max-height: 100%;
+}
+
+.tag-item a:after {
+   content: ",";
+}
+
+.tag-item:last-of-type a:after {
+    display: none;
+}
+
+.blogpost__post-body {
+    margin: 0;
+}
+
+.blogpost__timestamp {
+    text-align: left;
+    width: 100%;
+}
+
+
+// Blog Post Footer
+.blogpost__post-footer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+.blogpost__post-attributes {
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    width: 100%;
+    padding: 10px 0px 5px;
+    text-align: left;
+}
+
+.blogpost__sharing-links {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    margin: 0 0 30px;
+    width: 100%;
+    text-align: left;
+}
+
+.blogpost__post-category {
+    border-right: 1px solid darken(@color-swatch1,10%);
+    padding-right: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    @media @mobile {
+        border: 0;
+    }
+}
+
+.blogpost__post-tags {
+    display: inline-block;
+}
+
+.post-attributes {
+    margin: 0;
+}
+
+// Blog Post Buttons
+.blogpost__button {
+    padding: 0;
+    border-radius: 0;
+}
+
+// Blog Post Sharing Buttons
+.icon--twitter.blogpost__button {
+    color: #00aced;
+    border: 0;
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.icon--facebook.blogpost__button {
+    color: #3b5998;
+    border: 0;
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.icon--googleplus.blogpost__button {
+    color: #dd4b39;
+    border: 0;
+    &:hover {
+        background-color: transparent;
+    }
+}
