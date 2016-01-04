@@ -14,10 +14,10 @@
     {
         "Swatch 1": {
             "color1":"#ffffff",
-            "color2":"#5EBAB1",
-            "color3":"#7ED1C5",
-            "color4":"#000000",
-            "color5":"#7b7b7b",
+            "color2":"#000000",
+            "color3":"#009FE1",
+            "color4":"#848484",
+            "color5":"#848484",
             "color6":"#ffffff",
             "color7":"#E4E4E4"
         },
@@ -61,33 +61,33 @@
     "fontSwatch": {
        "title": "Muli, Helvetica, Arial, sans-serif",
         "font1": {
-            "font-family": "\"Muli\", Helvetica, Arial, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "28px",
-            "font-weight": "300",
+            "font-weight": "400",
             "line-height": "36px",
             "color": "@color-swatch4",
             "letter-spacing": "1px"
         },
         "font2": {
-            "font-family": "\"Muli\", Helvetica, Arial, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "24px",
-            "font-weight": "300",
+            "font-weight": "400",
             "line-height": "32px",
             "color": "@color-swatch4",
             "letter-spacing": "1px"
         },
         "font3": {
-            "font-family": "\"Muli\", Helvetica, Arial, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "20px",
-            "font-weight": "300",
+            "font-weight": "400",
             "line-height": "28px",
             "color": "@color-swatch4",
             "letter-spacing": "1px"
         },
         "font4": {
-            "font-family": "\"Muli\", Helvetica, Arial, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "16px",
-            "font-weight": "300",
+            "font-weight": "400",
             "line-height": "24px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
@@ -95,15 +95,15 @@
         "font5": {
             "font-family": "\"Merriweather\", Georgia, serif",
             "font-size": "14px",
-            "font-weight": "300",
+            "font-weight": "400",
             "line-height": "28px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "14px",
-            "font-weight": "400",
+            "font-weight": "700",
             "line-height": "26px",
             "color": "@color-swatch3",
             "color-hover": "@color-swatch4",
@@ -112,9 +112,9 @@
             "background-color-hover": "@color-swatch1"
          },
         "font7": {
-            "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "13px",
-            "font-weight": "400",
+            "font-weight": "700",
             "line-height": "24px",
             "color": "@color-swatch2",
             "letter-spacing": "0px",
@@ -122,7 +122,7 @@
             "background-color-hover": "@color-swatch3"
         },
         "font8": {
-            "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "26px",
             "font-weight": "700",
             "line-height": "36px",
@@ -138,7 +138,7 @@
             "letter-spacing": "1px"
         },
         "font10": {
-            "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
+            "font-family": "\"Pacifico\", \"Lobster\", Verdana, sans-serif",
             "font-size": "30px",
             "font-weight": "700",
             "line-height": "38px",
@@ -216,7 +216,7 @@
             "font__navigation--letter-spacing" : "@font-swatch6-letter-spacing"
         },
         "feature": {
-            "color__feature--background": "transparent",
+            "color__feature-content--background" : "@color-swatch2",
             "color__feature-headline--text": "@font-swatch8-color",
             "color__feature-strapline--text": "@font-swatch9-color",
             "color__feature-button--text": "@font-swatch9-color",

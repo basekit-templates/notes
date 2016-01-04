@@ -267,16 +267,18 @@
     }
 }
 
-.feature__background-image {
+.feature {
     &:after {
+        content: "";
+        display: block;
         position: absolute;
-        left: 0;
+        z-index: 1;
         top: 0;
         right: 0;
         bottom: 0;
-        content:"";
-        background-color: fade(@color-swatch4, 50%);
-        display: block;
+        left: 0;
+        background-color: fade(@color__feature-content--background,10%);
+        opacity: 0.8;
     }
 }
 
@@ -817,8 +819,11 @@ button.feature__button {
 }
 
 .icon--paypal.paypalbuynow__button {
-        color: #1e477a;
+    color: #1e477a;
+    &:hover {
+        color: @font-swatch9-color;
     }
+}
 
 //  8.6 #SLIDESHOW
 //  --------------
@@ -986,7 +991,7 @@ input.input[type=search],
     color: #dd4b39;
 }
 
-.icon--linkin .social-name {
+.icon--linkedin .social-name {
     color: #007bb6;
 }
 
