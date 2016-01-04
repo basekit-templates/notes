@@ -768,6 +768,9 @@ button.feature__button {
 
 .icon--twitter.tweet__button {
     color: #00aced;
+    &:hover {
+        color: @font-swatch9-color;
+    }
 }
 
 
@@ -775,8 +778,11 @@ button.feature__button {
 //  --------------
 
 .icon--dropbox.dropbox__button {
-        color: #3d9ae8;
+    color: #3d9ae8;
+    &:hover {
+        color: @font-swatch9-color;
     }
+}
 
 //  8.4  #CLICK TO CALL
 //  --------------
@@ -785,6 +791,12 @@ button.feature__button {
     &:hover {
         text-decoration: none;
     }   
+}
+
+.clicktocall__label {
+    @media @tablet {
+        color: @font-swatch9-color;
+    }
 }
 
 .phone-number-link {
@@ -958,6 +970,32 @@ input.input[type=search],
 
 .icon--dropbox:before {
     color: #3d9ae8;
+}
+
+//Social name
+
+.icon--twitter .social-name {
+    color: #00aced;
+}
+
+.icon--facebook .social-name {
+    color: #3b5998;
+}   
+
+.icon--googleplus .social-name {
+    color: #dd4b39;
+}
+
+.icon--linkin .social-name {
+    color: #007bb6;
+}
+
+.icon--rss .social-name {
+    color: #FF6600;
+}
+
+.icon--youtube .social-name {
+    color: #FF6600;
 }
 
 
