@@ -1,0 +1,29 @@
+<div class="right-section  container">
+
+    <header class="template-header">
+        <div class="header-container clearfix">
+            <div class="navigation-container">
+                <div class="logo-container">
+                    {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+                </div>
+                <div class="companyname-container">
+                    {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+                </div>
+            </div>
+            <div class="navigation-widget-profile">
+                {{widget('extendednavigation', 'extendednavigation', {"align":"right"})|raw}}
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Page Content -->
+    <section class="template-content">
+
+        <!-- Main Widet Zone -->
+        {{zone('main')|raw}}
+
+    </section>
+    <!-- End Page Content -->
+
+</div>

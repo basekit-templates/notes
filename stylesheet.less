@@ -42,8 +42,6 @@
 // 2. #Page Settings **
 // -----------------------------
 
-// ** Styles for advanced Baseplate template - remove when developing a custom template
-
 
 // Body
 // --------------
@@ -68,10 +66,31 @@ body {
 }
 
 
-.template-header + .right-section {
+
+.feature {
+    width: 40%;
+    position: fixed;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        position: relative;
+    }
+}
+
+.right-section {
+    width: 60%;
+    margin-left: 40%;
+}
+
+
+.widget[data-widget-type="feature"].bk-tpl-hidden + .right-section {
     width: 100%;
     margin-left: 0;
 }
+
+
+
+
 
 // Header Wrapper
 // --------------
@@ -141,22 +160,19 @@ body {
 // -----------------------------
 
 // Header
-.header-container {
-    padding-top: 10px;
-}
+// .header-container {
+//     padding-top: 10px;
+//     width: 60%;
+//     position: relative;
+//     margin-left: 40%;
+//     box-sizing: border-box;
+//     height: 100%;
 
-// Right Section
-.right-section {
-    width: 60%;
-    position: relative;
-    margin-left: 40%;
-    box-sizing: border-box;
-    height: 100%;
-    @media screen and (max-width: 1024px) {
-        width: 100%;
-        margin-left: 0;
-    }
-}
+//     @media screen and (max-width: 1024px) {
+//         width: 100%;
+//         margin-left: 0;
+//     }
+// }
 
 // Bk-pt-default
 
@@ -182,9 +198,9 @@ body {
 
 // Footer
 .feature-footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 40%;
     text-align: center;
     padding: 2% 5%;
     z-index: 99999;

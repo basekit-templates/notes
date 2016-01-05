@@ -2,32 +2,17 @@
 
 {% block content %}
 
-{% include "includes/header.twig" %}
+{% include "includes/footer.twig" %}
 
-<div class="right-section container">
-		<div class="header-container clearfix">
-			<div class="navigation-container">
-				<div class="logo-container">
-				    {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-				</div>
-				<div class="companyname-container">
-    	        	{{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-    	        </div>
-			</div>
-			<div class="navigation-widget-profile">
-			    {{widget('extendednavigation', 'extendednavigation', {"align":"right"})|raw}}
-			</div>
-		</div>
-			
-		<!-- Page Content -->
-		<section class="template-content">
-	
-			<!-- Main Widet Zone -->
-		   	{{zone('main')|raw}}
-	
-		</section>
-		<!-- End Page Content -->
+{{widget('feature', 'featurehome', {
+    "header": "profile",
+    "defaultBgImg": asset('images/feature-bg.jpg'),
+    'positionTopPercentage': '0',
+    'showBtn': true,
+    buttonText: "Lorem Ipsum"
+})|raw}}
 
-</div>
-	
+{% include "includes/right-section.twig" %}
+
+
 {% endblock %}
