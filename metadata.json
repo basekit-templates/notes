@@ -16,8 +16,8 @@
             "color1":"#ffffff",
             "color2":"#000000",
             "color3":"#009FE1",
-            "color4":"#848484",
-            "color5":"#848484",
+            "color4":"#505050",
+            "color5":"#505050",
             "color6":"#ffffff",
             "color7":"#E4E4E4"
         },
@@ -123,9 +123,9 @@
         },
         "font8": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
-            "font-size": "26px",
+            "font-size": "30px",
             "font-weight": "700",
-            "line-height": "36px",
+            "line-height": "38px",
             "color": "@color-swatch1",
             "letter-spacing": "1px"
         },
@@ -207,8 +207,8 @@
         },
         "navigation": {
             "color__navigation--text": "@color__primary",
-            "color__navigation--text--hover": "@font-swatch4-color",
-            "color__navigation--text--selected": "@font-swatch4-color",
+            "color__navigation--text--hover": "@color__primary",
+            "color__navigation--text--selected": "@color__primary",
             "font__navigation--font-family" : "@font-swatch6-font-family",
             "font__navigation--font-size" : "@font-swatch6-font-size",
             "font__navigation--font-weight" : "@font-swatch6-font-weight",

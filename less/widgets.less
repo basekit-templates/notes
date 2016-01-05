@@ -269,16 +269,14 @@
 
 .feature {
     &:after {
-        content: "";
-        display: block;
         position: absolute;
-        z-index: 1;
+        left: 0;
         top: 0;
         right: 0;
         bottom: 0;
-        left: 0;
-        background-color: fade(@color__feature-content--background,10%);
-        opacity: 0.8;
+        content:"";
+        background-color: fade(@color-swatch2, 20%);
+        display: block;
     }
 }
 
@@ -769,9 +767,9 @@ button.feature__button {
 //  --------------
 
 .icon--twitter.tweet__button {
-    color: #00aced;
-    &:hover {
-        color: @font-swatch9-color;
+    color: #009FE1;
+    &:hover:before, &:hover {
+        color: #ffffff;
     }
 }
 
@@ -780,9 +778,9 @@ button.feature__button {
 //  --------------
 
 .icon--dropbox.dropbox__button {
-    color: #3d9ae8;
-    &:hover {
-        color: @font-swatch9-color;
+    color: #009FE1;
+    &:hover:before, &:hover {
+        color: #ffffff;
     }
 }
 
@@ -819,9 +817,9 @@ button.feature__button {
 }
 
 .icon--paypal.paypalbuynow__button {
-    color: #1e477a;
-    &:hover {
-        color: @font-swatch9-color;
+    color: #009FE1;
+    &:hover:before, &:hover {
+        color: #ffffff;
     }
 }
 
@@ -970,7 +968,7 @@ input.input[type=search],
 }
 
 .icon--paypal:before {
-    color: #1e477a;
+    color: #009FE1;
 }
 
 .icon--dropbox:before {
@@ -1003,10 +1001,26 @@ input.input[type=search],
     color: #FF6600;
 }
 
+// Footer
+.feature-footer {
+    .social-name  {
+        color: @font-swatch9-color;
+    }
+    .icon--twitter:before,
+    .icon--facebook:before,
+    .icon--googleplus:before,
+    .icon--linkedin:before,
+    .icon--rss:before,
+    .icon--youtube:before,
+    .icon--paypal:before,
+    .icon--dropbox:before {
+        color: @font-swatch9-color;
+    }
+}
 
 //Company Header Social Icons
 .company-header .social-social-link {
-    color: white;
+    color: #ffffff;
 }
 
 .company-header .social-list {
