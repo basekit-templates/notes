@@ -79,11 +79,13 @@ body {
 
 .widget[data-widget-type="feature"] {
     .widget-overlay {
-        width: 40%!important;
+        width: 40% !important;
         height: 100vh!important;
+        position: fixed!important;
         @media @tablet {
             min-height: 400px!important;
             width: 100%!important;
+            height: 100%!important;
         }
         @media @mobile {
             min-height: 200px!important;
@@ -234,6 +236,7 @@ body {
     }
     .twitter__tweet-item {
         border: 0;
+        padding: 0;
     }
     .signupform__form,
     .signupform__legend {
