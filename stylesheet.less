@@ -80,6 +80,10 @@ body {
 .right-section {
     width: 60%;
     margin-left: 40%;
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 
@@ -174,6 +178,10 @@ body {
 //     }
 // }
 
+.header-container {
+    width: 100%;
+}
+
 // Bk-pt-default
 
 .bk-pt-default .container {
@@ -231,6 +239,14 @@ body {
     .twitter__timestamp,
     .twitter-feed__via {
         color: @color-swatch2;
+    }
+    .social-social-link {
+        padding: 0px 12px;
+    }
+    @media screen and (max-width: 1024px) {
+        position: absolute;
+        top: 0;
+        width: 100%;
     }
     @media @mobile {
         display: none;
