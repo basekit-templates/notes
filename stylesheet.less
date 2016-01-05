@@ -75,10 +75,19 @@ body {
         width: 100%;
         position: relative;
     }
-    .widget-overly {
+}
+
+.widget[data-widget-type="feature"] {
+    .widget-overlay {
         width: 40%!important;
         height: 100vh!important;
-
+        @media @tablet {
+            min-height: 400px!important;]
+            width: 100%!important;
+        }
+        @media @mobile {
+            min-height: 200px!important;
+        }
     }
 }
 
@@ -251,7 +260,7 @@ body {
     .signupform__form-group:nth-child(1) {
         width: 83%;
     }
-    .signupform__form-group:nth-child(1) { 
+    .signupform__form-group:nth-child(2) { 
         width: 17%;
     }
     .signupform__button {
