@@ -1132,13 +1132,18 @@ input.input[type=search],
     width: 60%;
     float: left;
     display: inline-block;
-    margin-right: 10px;
+    @media @tablet {
+        width: 75%;
+    }
 }
 
 .signupform__form-group:nth-child(2) {
     width: 33%;
     float: left;
     display: inline-block;
+    @media @tablet {
+        width: 25%;
+    }
     @media @mobile {
         text-align: center;
     }
