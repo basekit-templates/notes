@@ -257,9 +257,21 @@ body {
     }
     .signupform__form-group:nth-child(1) {
         width: 83%;
+        @media @tablet {
+            width: 50%;
+            vertical-align: middle;
+            margin-top: 0;
+            float: initial;
+        }
     }
     .signupform__form-group:nth-child(2) { 
         width: 17%;
+        @media @tablet {
+            width: 15%;
+            vertical-align: middle;
+            margin-top: 0;
+            float: initial;
+        }
     }
     .signupform__button {
         color: #ffffff;
