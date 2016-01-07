@@ -2,6 +2,8 @@
 
 {% block content %}
 
+{% include "includes/footer.twig" %}
+
 {{widget('feature', 'featurehome', {
     "header": "profile",
     "defaultBgImg": asset('images/feature-bg.jpg'),
@@ -12,6 +14,5 @@
 
 {% include "includes/right-section.twig" %}
 
-{% include "includes/footer.twig" %}
 
 {% endblock %}

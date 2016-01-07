@@ -105,19 +105,16 @@ body {
 .widget[data-widget-type="feature"].bk-tpl-hidden + .right-section {
     width: 100%;
     margin-left: 0;
-    margin: 20px 20%;
+    margin: 0px auto;
+    padding: 20px 20%;
+    @media @tablet {
+        padding: 20px 4%;
+        margin: 0;
+    }
 }
 
 .widget[data-widget-type="feature"].bk-tpl-hidden + .feature-footer {
-    position: relative;
-    background-color: @color-swatch3;
-    padding: 1% 5%;
-    a, p {
-        padding-bottom: 0;
-    }
-    @media @tablet {
-        height: 100%;
-    }
+    display: none;
 }
 
 
