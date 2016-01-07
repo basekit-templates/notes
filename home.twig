@@ -2,8 +2,6 @@
 
 {% block content %}
 
-{% include "includes/footer.twig" %}
-
 {{widget('feature', 'featurehome', {
     "header": "profile",
     "defaultBgImg": asset('images/feature-bg.jpg'),
@@ -11,6 +9,8 @@
     'showBtn': true,
     buttonText: "Lorem Ipsum"
 })|raw}}
+
+{% include "includes/footer.twig" %}
 
 {% include "includes/right-section.twig" %}
 
