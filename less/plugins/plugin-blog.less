@@ -29,9 +29,7 @@
     float: left;
     margin-right: 10px;
     @media @tablet {
-        padding-bottom: 10px;
-        width: 100%;
-        text-align: center;
+        width: initial;
     }
 }
 
@@ -45,9 +43,10 @@
     width: 50%;
     height: 40px;
     @media @tablet {
-        width: 100%;
-        float: initial;
+        float: left;
         display: table;
+        width: 50%;
+        height: 40px;
     }
 }
 
@@ -57,13 +56,16 @@
     width: 23%;
     text-align: left;
     @media @tablet {
-        width: 100%;
-        float: initial;
-        display: block;
+        float: left;
+        display: inline-block;
         margin-left: 0;
-        text-align: center;
+        width: 23%;
+        text-align: left;
     }
 }
+
+
+
 
 // -------------------------------
 // 2. #Blog Post
