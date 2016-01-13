@@ -28,8 +28,10 @@
     display: inline-block;
     float: left;
     margin-right: 10px;
+    text-align: center;
     @media @tablet {
-        width: initial;
+        width: 100%;
+        padding-bottom: 10px;
     }
 }
 
@@ -45,8 +47,11 @@
     @media @tablet {
         float: left;
         display: table;
-        width: 70%;
+        width: 85%;
         height: 40px;
+    }
+    @media @mobile {
+        width: 70%;
     }
 }
 
@@ -59,13 +64,17 @@
         float: left;
         display: inline-block;
         margin-left: 0;
-        width: 30%;
+        width: 15%;
         text-align: left;
+    }
+    @media @mobile {
+        width: 30%;
     }
 }
 
 .responsivecolumns .blogsearch__legend {
     float: initial;
+    padding-bottom: 10px;
 }
 
 
