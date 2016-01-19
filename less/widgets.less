@@ -902,6 +902,10 @@ input.input[type=search],
 
 .social-item {
     margin-bottom: 10px;
+
+    @media @tablet {
+        margin-bottom: 0;
+    }
 }
 
 .socialicons__social-item {
@@ -1042,7 +1046,8 @@ input.input[type=search],
 // Body
 .widget__twitter {
     background-color: transparent;
-    margin-top: 60px;
+    margin-top: 50px;
+
     &:before {
         content: "\f099";
         font-family: fontawesome;
@@ -1069,8 +1074,7 @@ input.input[type=search],
 // Content
 .twitter__avatar {
     display: inline-block;
-    margin-right: 2%;
-    width: 80px;
+    width: 70px;
     margin-bottom: 10px;
 }
 
@@ -1140,8 +1144,27 @@ input.input[type=search],
     @media @tablet {
         width: 25%;
     }
-    @media @mobile {
-        text-align: center;
+}
+
+.signupform__button,
+.blogsearch__button,
+.ecomproductslist__button:not(.button--pagination) {
+    height: 40px;
+    padding: 0 30px;
+    .border-radiuses(20px, 20px, 0, 0);
+    border-left-color: transparent;
+
+    @media @tablet {
+        padding: 0 20px;
+    }
+}
+.ecomproductslist__button:not(.button--pagination) {
+    height: 36px;
+    margin-left: -14px;
+
+    @media @tablet {
+        border-radius: 20px;
+        border-left-color: @color__button--border;
     }
 }
 

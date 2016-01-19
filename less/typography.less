@@ -70,10 +70,14 @@ p {
 }
 
 // Blockquotes
-blockquote:before {
-	margin-right: 10px;
-	font-size: 32px;
-	color: @color__primary;
-	display: inline-block;
-    float: left;
+blockquote {
+	margin: 20px 0;
+
+	&:before {
+		margin-right: 10px;
+		font-size: 32px;
+		color: @color__primary;
+		display: inline-block;
+	    float: left;
+	}
 }

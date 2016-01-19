@@ -18,10 +18,9 @@
 // 1. #LESS Includes
 // -----------------------------
 
-@import "@{templateCommon}/bk-less-framework.less"; // BaseKit LESS Framework 
-
-// ** BaseKit LESS Framework is a set of non obtrusive LESS files that can be pulled into 
-//    your template to guarentee widgets come to life. Proivides default styles for all widgets.
+@import "@{templateCommon}/bk-less-framework-v8.less"; // BaseKit LESS Framework
+@import "@{templateLocal}/bk-v8-test.less";
+@import "@{templateLocal}/less/variables.less";
 
 // Template Includes
 @import "@{templateLocal}/less/typography.less"; // Theme
@@ -387,13 +386,3 @@ body {
         display: block;
     }
 }
-
-
-
-
-// -----------------------------
-// 4. #Variables
-// -----------------------------
-
-@import "@{templateLocal}/bk-v8-test.less";
-@import "@{templateLocal}/less/variables.less";
