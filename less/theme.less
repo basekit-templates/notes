@@ -306,7 +306,7 @@ textarea,
     }
 }
 
-.signupform__form-group:nth-child(2) {
+.signupform__form-group:nth-child(1) {
     -webkit-box-ordinal-group: 1;
     -moz-box-ordinal-group: 1;
     -webkit-order: 0;
@@ -346,6 +346,25 @@ textarea,
     }
 }
 
+.responsivecolumns .signupform__form-group:nth-child(1) {
+    @media @tablet {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+.responsivecolumns .signupform__form-group:nth-child(2) {
+    @media @tablet {
+        width: 100%;
+    }
+}
+
+.responsivecolumns
+    .blogsearch__button, .ecomproductslist__button:not(.button--pagination) {
+        border: 1px solid @color-swatch7!important;
+        border-radius: 20px!important;
+    }
+}
 
 
 
