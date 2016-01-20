@@ -248,7 +248,6 @@
             "color__gallery-description--text": "@color-swatch1"
         },
         "slideshow": {
-            "color__slideshow-caption--background": "@color-swatch1",
             "color__slideshow-title--text": "@color-swatch1",
             "color__slideshow-description--text": "@color-swatch1",
             "color__slideshow-pagination-item--text--selected": "@color__primary",

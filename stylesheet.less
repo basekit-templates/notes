@@ -265,6 +265,9 @@ body {
     }
     .signupform__form-group:nth-child(1) {
         width: 75%;
+        @media screen and (max-width: 1024px) { 
+            width: 90%;
+        }
         @media @tablet {
             width: 50%;
             vertical-align: middle;
@@ -277,9 +280,12 @@ body {
         }
     }
     .signupform__form-group:nth-child(2) { 
-        width: 25%;
+        width: 20%;
+        @media screen and (max-width: 1024px) { 
+            width: 10%;
+        }
         @media @tablet {
-            width: 14%;
+            width: 11%;
             vertical-align: middle;
             margin-top: 0;
             float: initial;
