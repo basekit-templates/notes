@@ -875,9 +875,11 @@ input.input[type=search],
     font-size: @font__h3--font-size;
     text-align: left;
     padding-bottom: 0;
+    @media @tablet {
+        text-align: center;
+    }
     @media @mobile {
         margin: 5px auto 8px;
-        text-align: center;
     }
 }
 
