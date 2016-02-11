@@ -6,9 +6,9 @@
     "templateType":"standard",
     "widgetVersion":2,
     "images":[
+        "images/image-1.jpg",
         "images/feature-bg.jpg",
-        "images/logo.png",
-        "images/image-1.jpg"
+        "images/logo.png"
     ],
     "colorSwatches":
     {
@@ -59,7 +59,7 @@
         }
     },
     "fontSwatch": {
-       "title": "Muli, Helvetica, Arial, sans-serif",
+       "title": "Lato",
         "font1": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "28px",
