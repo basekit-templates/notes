@@ -555,7 +555,7 @@
     width: 40%;
     @media @tablet {
         float: initial;
-        width:100%;
+        width: 100%;
     }
 }
 
@@ -624,5 +624,60 @@
 select {
     @media @tablet {
         width:100%;
+    }
+}
+
+
+
+
+// ---------------------------------
+// #Columns Variations
+// ---------------------------------
+
+
+// All Columns
+// ------------------------------
+
+.responsivecolumns {
+
+    .ecomproductslist__fieldset--search {
+        width: 100%;
+    }
+
+    // 3/4 columns
+    .columns-four-first,
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth,
+    .columns-three-left,
+    .columns-three-right,
+    .columns-three-middle {
+
+        .ecomproductslist__button:not(.button--pagination) {
+            margin-left: 0;
+            border: 1px solid #e4e4e4;
+        }
+
+    }
+
+    .product-item {
+        width: 100%;
+    }
+
+    .twitter__tweet-wrap {
+        display: block;
+    }
+
+    .twitter__tweet-wrap p {
+        font-size: 12px;
+    }
+
+    // 4 columns
+    // ------------------------------
+    .columns-four-first,
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth {
+
     }
 }
