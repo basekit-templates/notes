@@ -82,6 +82,13 @@ button:hover,
     transition:         @prop @time @ease;
 }
 
+.blogtransition (@duration:0.2s, @ease:ease-in-out) {
+  -webkit-transition: all @duration @ease;
+  -moz-transition: all @duration @ease;
+  -o-transition: all @duration @ease;
+  transition: all @duration @ease;
+}
+
 
 
 .border-radiuses (@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
