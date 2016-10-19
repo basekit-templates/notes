@@ -67,21 +67,21 @@ body {
 // Feature tpl-hidden
 // --------------
 
-.feature {
-    width: 35%;
-    position: fixed;
-
-    @media screen and (max-width: 1024px) {
-        width: 100%;
-        position: relative;
-    }
-}
 
 .widget[data-widget-type="feature"] {
+    position: fixed;
+    width: 35%;
+
+    @media screen and (max-width: 1024px) {
+        position: relative;
+        width: 100%;
+    }
+
     .widget-overlay {
         width: 35% !important;
         height: 100vh!important;
         position: fixed!important;
+
         @media screen and (max-width: 1024px) {
             position: absolute!important;
             width: 100%!important;
@@ -164,8 +164,8 @@ body {
 // #Default Page Sticky Footer
 // ------------------------------------------
 
-.navigation-container, 
-.logo-container, 
+.navigation-container,
+.logo-container,
 .companyname-container {
     vertical-align: middle;
     display: inline-block;
@@ -274,7 +274,7 @@ body {
             vertical-align: top;
         }
     }
-    .signupform__form-group:nth-child(2) { 
+    .signupform__form-group:nth-child(2) {
         @media @tablet {
             vertical-align: middle;
             margin-top: 0;
@@ -308,7 +308,7 @@ body {
 }
 
 
-// Flexbox 
+// Flexbox
 // -----------------------------
 
 .header-container {
