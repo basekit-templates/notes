@@ -233,6 +233,9 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    .flex-display;
+    .align-items(center);
+    .justify-content(center);
     width: 100%;
     height: 100vh;
     &:after {
@@ -249,9 +252,13 @@
 
 .feature__content-wrap {
     text-align: center;
-    max-width: 80%;
-    vertical-align: middle;
     position: relative;
+    -ms-word-break: break-word;
+    word-break: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
     z-index: 999;
     @media screen and (max-width: 1024px) {
         height: 400px;
