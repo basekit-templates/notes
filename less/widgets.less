@@ -607,11 +607,29 @@
 // ----------------
 
 // Slideshow Height
-.responsiveslideshow,
-.responsiveslideshow__figure {
+.slides-list.cover,
+.responsiveslideshow .cover .figure {
     position: relative;
-    min-height: 400px;
+    height: 450px;
+
+    @media @tablet {
+        height: 400px;
+    }
+
+    @media @mobile {
+        height: 350px;
+    }
 }
+
+
+.contain .image {
+    max-height: 700px;
+
+    @media @tablet {
+        max-height: 500px;
+    }
+}
+
 
 .responsiveslideshow__slideshow-controls,
 .responsiveslideshow__caption {
@@ -619,19 +637,6 @@
     margin-top: 15px;
 }
 
-
-// Slideshow Images
-// ----------------
-
-// Use Background-image Method
-.responsiveslideshow__figure {
-    background-size: cover;
-    background-position: center;
-}
-// Hide Img Element
-.responsiveslideshow__image {
-    display: none;
-}
 
 
 // Slideshow Image Captions
@@ -658,34 +663,81 @@
     }
 }
 
-// Navigation Buttons
 .slide-navigation {
+    .flex-display;
+    .flex-direction(row);
+    .flex-wrap(nowrap);
+    .justify-content(flex-end);
+    margin: 0;
     position: absolute;
-    top: 150px;
-    width: 100%;
-}
-
-.previous-button {
-    float: left;
-}
-
-.next-button {
-    float: right;
+    top: 0;
+    right :0;
+    width: auto;
 }
 
 .pause-toggle {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: 0px auto;
-    width: 100px;
     background-color: rgba(0,0,0,0.15);
-    color: @color-swatch1;
     border-radius: 0;
     border: 0;
+    color: @color-swatch1;
+    position: relative;
+    width: 75px;
 }
+
+
+// Navigation Buttons
+.no-touch .slide-navigation {
+    display: block;
+    top: ~"calc(50% - 60px)";
+    width: 100%;
+
+    @media only screen and (max-width: 1024px) {
+        .slide-navigation;
+    }
+
+    .previous-button {
+        float: left;
+    }
+
+    .pause-toggle {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: 0px auto;
+        width: 100px;
+
+         @media only screen and (max-width: 1024px) {
+            .pause-toggle;
+        }
+    }
+
+    .next-button {
+        float: right;
+    }
+}
+
+.no-touch .responsiveslideshow {
+
+    .pause-toggle {
+        opacity: 1;
+        transition: opacity 0.5s ease;
+
+        &.pause {
+            opacity: 0;
+
+            @media only screen and (max-width: 1024px) {
+                opacity: 1;
+            }
+        }
+    }
+
+    &:hover .pause {
+        opacity: 1;
+    }
+}
+
 
 .responsiveslideshow__pause-toggle {
     &:before {
@@ -833,6 +885,11 @@ button.feature__button {
     height: 76px;
     border-radius: 0;
     border: 0;
+
+    @media only screen and (max-width: 1024px) {
+        height: 50px;
+    }
+
     &:hover {
         color: @font-swatch9-color;
     }
