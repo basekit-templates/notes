@@ -1,6 +1,6 @@
 {
     "versionTenCompatible": 1,
-    "name":"Notes",4
+    "name":"Notes",
     "thumbnail":"notes.png",
     "screenshot":"notes-screenshot.jpg",
     "pageTypes":["home"],
