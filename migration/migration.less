@@ -10,9 +10,20 @@
     // -----------------------------
 
 
+    &.edit {
+        .right-section {
+            position: absolute;
+            width: calc(~"65% - 200px");
+            right: 100px;
+            
+            @media @tablet {
+                width: 100%;
+                right: 0;
+            }
+        }
+    }
+    
     .container {
-        width: 100%;
-        max-width: 100%;
         padding: 0;
     }
 
@@ -24,21 +35,24 @@
     
     
     // Applies spacing to widgets to mimic container width
+    .template-header,
     .empty-zone,
     #page-zones__main:empty,
     #page-zones__main > .widget:not([data-name="row"]),
     .row:not(.row--width-no-padding) .row__container {
-        max-width: 1100px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-        
-        @media @tablet {
-            width: 100%;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
+        padding-left: 40px;
+        padding-right: 40px;
     }
+    
+    
+    .row--width-contained .row__container {
+        width: 100%;
+    }
+    
+    
+    .style--light:first-child .row--style-light .row__container {
+        padding-top: 0;
+    } 
     
     
     // Adds spacing to a section when a widget follows it
@@ -48,29 +62,35 @@
     #page-zones__main > .widget:not([data-name="row"]):first-child {
         margin-top: 20px;
     }
-
-
-    // First and last widget
-    #page-zones__main > .widget:not([data-name="row"]):first-child {
-      margin-top: 40px;
-      
-      @media @tablet {
-          margin-top: 20px;
-      }
-    }
-    #page-zones__main > .widget:not([data-name="row"]):last-child {
-        margin-bottom: 40px;
+    
+    
+    // Reduce container spacing
+    .height--large .row__container,
+    .height--default .row__container,
+    #page-zones__main .height--no-padding .row--layout-image-text-5c:not(.row--layout-image-text-5a) .row__container,
+    #page-zones__main .style--background-image+.height--default .row__container {
+        padding-top: 40px;
+        padding-bottom: 40px;
         
-        @media @tablet {
-            margin-bottom: 20px;
+        @media @mobile {
+            padding-top: 30px;
+            padding-bottom: 30px;
         }
     }
+
     
     
     // Widget styles
     [data-name="row"] {
-        .widget--zone-widget {
-            margin-bottom: 0;
+        .ecomproduct .product-actions {
+            display: inherit;
+            width: inherit;
+            margin: inherit;
+            border: inherit;
+            padding: inherit;
+            margin: inherit;
+            float: inherit;
+            text-align: inherit;
         }
     }
 
