@@ -4,6 +4,8 @@
 
 
 #migrated-site {
+    
+    height: 100%;
 
 
     // Stylesheet overrides
@@ -12,9 +14,9 @@
 
     &.edit {
         .right-section {
-            position: absolute;
-            width: calc(~"65% - 200px");
-            right: 100px;
+            position: relative;
+            width: calc(~"65% - 70px");
+            right: -70px;
             
             @media @tablet {
                 width: 100%;
@@ -50,7 +52,7 @@
     }
     
     
-    .style--light:first-child .row--style-light .row__container {
+    #page-zones__main > .style--light:first-child .row--style-light .row__container {
         padding-top: 0;
     } 
     
@@ -91,6 +93,30 @@
             margin: inherit;
             float: inherit;
             text-align: inherit;
+        }
+        .social-item {
+            margin: 0 0 10px;
+            padding: 0 4px;
+        }
+        .social-link {
+            display: inline-block;
+            padding: 4px 10px;
+        }
+        .icon--twitter .social-name,
+        .icon--facebook .social-name,
+        .icon--instagram .social-name,
+        .icon--linkedin .social-name,
+        .icon--youtube .social-name,
+        .icon--pinterest .social-name,
+        .icon--rss .social-name,
+        .icon--vkontakte .social-name {
+            color: white;
+        }
+        .widget__twitter:before {
+            display: none;
+        }
+        .icon--twitter:before {
+            color: inherit;
         }
     }
 
