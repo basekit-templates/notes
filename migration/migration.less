@@ -4,12 +4,20 @@
 
 
 #migrated-site {
-    
     height: 100%;
 
 
     // Stylesheet overrides
     // -----------------------------
+
+
+    &.edit .widget[data-widget-type="feature"] .widget-overlay {
+        left: 100px;
+
+        @media @tablet {
+            left: 0;
+        }
+    }
 
 
     &.edit {
@@ -24,7 +32,14 @@
             }
         }
     }
+
+
+    &.row-move-mode,
+    &.row-edit {
+        display: none;
+    }
     
+
     .container {
         padding: 0;
     }
