@@ -1,0 +1,138 @@
+// -----------------------------
+// Migration Styles
+// -----------------------------
+
+
+#migrated-site {
+    height: 100%;
+
+
+    // Stylesheet overrides
+    // -----------------------------
+
+
+    &.edit .widget[data-widget-type="feature"] .widget-overlay {
+        left: 100px;
+
+        @media @tablet {
+            left: 0;
+        }
+    }
+
+
+    &.edit {
+        .right-section {
+            position: relative;
+            width: calc(~"65% - 70px");
+            right: -70px;
+            
+            @media @tablet {
+                width: 100%;
+                right: 0;
+            }
+        }
+    }
+
+
+    &.row-move-mode,
+    &.row-edit {
+        display: none;
+    }
+    
+
+    .container {
+        padding: 0;
+    }
+
+
+
+
+    // Migration styles
+    // -----------------------------
+    
+    
+    // Applies spacing to widgets to mimic container width
+    .template-header,
+    .empty-zone,
+    #page-zones__main:empty,
+    #page-zones__main > .widget:not([data-name="row"]),
+    .row:not(.row--width-no-padding) .row__container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    
+    .row--width-contained .row__container {
+        width: 100%;
+    }
+    
+    
+    #page-zones__main > .style--light:first-child .row--style-light .row__container {
+        padding-top: 0;
+    } 
+    
+    
+    // Adds spacing to a section when a widget follows it
+    #page-zones__main > [data-name="row"] + .widget:not([data-name="row"]),
+    #page-zones__main > .widget:not([data-name="row"]) + [data-name="row"]:not(:last-child),
+    &.edit #page-zones__main-overlay + .widget:not([data-name="row"]),
+    #page-zones__main > .widget:not([data-name="row"]):first-child {
+        margin-top: 20px;
+    }
+    
+    
+    // Reduce container spacing
+    .height--large .row__container,
+    .height--default .row__container,
+    #page-zones__main .height--no-padding .row--layout-image-text-5c:not(.row--layout-image-text-5a) .row__container,
+    #page-zones__main .style--background-image+.height--default .row__container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        
+        @media @mobile {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    
+    
+    // Widget styles
+    [data-name="row"] {
+        .ecomproduct .product-actions {
+            display: inherit;
+            width: inherit;
+            margin: inherit;
+            border: inherit;
+            padding: inherit;
+            margin: inherit;
+            float: inherit;
+            text-align: inherit;
+        }
+        .social-item {
+            margin: 0 0 10px;
+            padding: 0 4px;
+        }
+        .social-link {
+            display: inline-block;
+            padding: 4px 10px;
+        }
+        .icon--twitter .social-name,
+        .icon--facebook .social-name,
+        .icon--instagram .social-name,
+        .icon--linkedin .social-name,
+        .icon--youtube .social-name,
+        .icon--pinterest .social-name,
+        .icon--rss .social-name,
+        .icon--vkontakte .social-name {
+            color: white;
+        }
+        .widget__twitter:before {
+            display: none;
+        }
+        .icon--twitter:before {
+            color: inherit;
+        }
+    }
+
+}
