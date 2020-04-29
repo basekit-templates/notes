@@ -23,12 +23,15 @@
     &.edit {
         .right-section {
             position: relative;
-            width: calc(~"65% - 70px");
-            right: -70px;
+
+            @media only screen and (min-width: 1024px) {
+                right: -70px;
+                width: calc(~"65% - 70px");
+            }
             
             @media @tablet {
-                width: 100%;
                 right: 0;
+                width: 100%;
             }
         }
     }
